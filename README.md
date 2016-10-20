@@ -1,0 +1,2 @@
+# apple-pay-example
+PAY.JPをペイメントソリューションプロバイダに使用してApple Payで支払いするiOSアプリのサンプルコードです
