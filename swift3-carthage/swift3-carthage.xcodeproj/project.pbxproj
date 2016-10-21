@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C62FB8B71DBA1D2B0067BCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62FB8B51DBA1D2B0067BCFF /* AppDelegate.swift */; };
+		C62FB8B81DBA1D2B0067BCFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62FB8B61DBA1D2B0067BCFF /* ViewController.swift */; };
+		C62FB8BA1DBA1F1A0067BCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62FB8B91DBA1F1A0067BCFF /* Assets.xcassets */; };
+		C62FB8BE1DBA29FE0067BCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62FB8BD1DBA29FE0067BCFF /* Main.storyboard */; };
+		C63131611DB8C91C00F50A1D /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63131601DB8C91C00F50A1D /* PAYJP.framework */; };
+		C63131621DB8C91C00F50A1D /* PAYJP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C63131601DB8C91C00F50A1D /* PAYJP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C63131631DB8C91C00F50A1D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C63131621DB8C91C00F50A1D /* PAYJP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C62FB8B51DBA1D2B0067BCFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C62FB8B61DBA1D2B0067BCFF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C62FB8B91DBA1F1A0067BCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../share/Assets.xcassets; sourceTree = "<group>"; };
+		C62FB8BD1DBA29FE0067BCFF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C63131411DB8AC9800F50A1D /* swift3-carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift3-carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63131501DB8AC9800F50A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63131571DB8AE3700F50A1D /* ApplePay.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = ApplePay.entitlements; path = ../../share/ApplePay.entitlements; sourceTree = "<group>"; };
+		C63131601DB8C91C00F50A1D /* PAYJP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAYJP.framework; path = Carthage/Build/iOS/PAYJP.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C631313E1DB8AC9800F50A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C63131611DB8C91C00F50A1D /* PAYJP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C63131381DB8AC9700F50A1D = {
+			isa = PBXGroup;
+			children = (
+				C63131601DB8C91C00F50A1D /* PAYJP.framework */,
+				C63131431DB8AC9800F50A1D /* swift3-carthage */,
+				C63131421DB8AC9800F50A1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C63131421DB8AC9800F50A1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C63131411DB8AC9800F50A1D /* swift3-carthage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C63131431DB8AC9800F50A1D /* swift3-carthage */ = {
+			isa = PBXGroup;
+			children = (
+				C62FB8B91DBA1F1A0067BCFF /* Assets.xcassets */,
+				C62FB8B51DBA1D2B0067BCFF /* AppDelegate.swift */,
+				C62FB8B61DBA1D2B0067BCFF /* ViewController.swift */,
+				C62FB8BD1DBA29FE0067BCFF /* Main.storyboard */,
+				C63131571DB8AE3700F50A1D /* ApplePay.entitlements */,
+				C63131501DB8AC9800F50A1D /* Info.plist */,
+			);
+			path = "swift3-carthage";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C63131401DB8AC9800F50A1D /* swift3-carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C63131531DB8AC9800F50A1D /* Build configuration list for PBXNativeTarget "swift3-carthage" */;
+			buildPhases = (
+				C631313D1DB8AC9800F50A1D /* Sources */,
+				C631313E1DB8AC9800F50A1D /* Frameworks */,
+				C631313F1DB8AC9800F50A1D /* Resources */,
+				C63131631DB8C91C00F50A1D /* Embed Frameworks */,
+				C63131641DB8C92800F50A1D /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift3-carthage";
+			productName = "swift3-carthage";
+			productReference = C63131411DB8AC9800F50A1D /* swift3-carthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C63131391DB8AC9700F50A1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = PAY.JP;
+				TargetAttributes = {
+					C63131401DB8AC9800F50A1D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8ZAC8P584F;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C631313C1DB8AC9700F50A1D /* Build configuration list for PBXProject "swift3-carthage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C63131381DB8AC9700F50A1D;
+			productRefGroup = C63131421DB8AC9800F50A1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C63131401DB8AC9800F50A1D /* swift3-carthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C631313F1DB8AC9800F50A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62FB8BA1DBA1F1A0067BCFF /* Assets.xcassets in Resources */,
+				C62FB8BE1DBA29FE0067BCFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C63131641DB8C92800F50A1D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PAYJP.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C631313D1DB8AC9800F50A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62FB8B81DBA1D2B0067BCFF /* ViewController.swift in Sources */,
+				C62FB8B71DBA1D2B0067BCFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C63131511DB8AC9800F50A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C63131521DB8AC9800F50A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C63131541DB8AC9800F50A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ../share/ApplePay.entitlements;
+				DEVELOPMENT_TEAM = 8ZAC8P584F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "swift3-carthage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.pay.example.swift3-carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C63131551DB8AC9800F50A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ../share/ApplePay.entitlements;
+				DEVELOPMENT_TEAM = 8ZAC8P584F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "swift3-carthage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.pay.example.swift3-carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C631313C1DB8AC9700F50A1D /* Build configuration list for PBXProject "swift3-carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63131511DB8AC9800F50A1D /* Debug */,
+				C63131521DB8AC9800F50A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C63131531DB8AC9800F50A1D /* Build configuration list for PBXNativeTarget "swift3-carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C63131541DB8AC9800F50A1D /* Debug */,
+				C63131551DB8AC9800F50A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C63131391DB8AC9700F50A1D /* Project object */;
+}

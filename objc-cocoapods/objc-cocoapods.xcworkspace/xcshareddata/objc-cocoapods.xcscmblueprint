@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "77A42D29C5B24FCB16C5BF0D59928E3165F68DB8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413" : 9223372036854775807,
+    "77A42D29C5B24FCB16C5BF0D59928E3165F68DB8" : 9223372036854775807,
+    "6D2AA09444BC78609E507F6001257C2960AD2562" : 9223372036854775807,
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4EC27AFB-E90E-4BE5-9CE3-43B8BB2E97D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413" : "ios-sdk\/Vendors\/Himotoki\/",
+    "77A42D29C5B24FCB16C5BF0D59928E3165F68DB8" : "apple-pay-example\/",
+    "6D2AA09444BC78609E507F6001257C2960AD2562" : "ios-sdk\/",
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : "ios-sdk\/Vendors\/Result\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "objc-cocoapods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "objc-cocoapods\/objc-cocoapods.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:payjp\/payjp-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D2AA09444BC78609E507F6001257C2960AD2562"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:payjp\/apple-pay-example.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "77A42D29C5B24FCB16C5BF0D59928E3165F68DB8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ikesyo\/Himotoki",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "892A392662EFD968ECAC00BEDD3BE4AF0F19F413"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "956D2B21DD155C49504BB67697A67F7C5351A353"
+    }
+  ]
+}
