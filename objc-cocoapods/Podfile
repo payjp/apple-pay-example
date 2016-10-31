@@ -2,5 +2,5 @@ platform :ios, '8.4'
 use_frameworks!
 
 target 'objc-cocoapods' do
-  pod 'PAYJP', git: 'git@github.com:payjp/payjp-ios.git'
+  pod 'PAYJP', git: 'git@github.com:payjp/payjp-ios.git', submodules: true
 end

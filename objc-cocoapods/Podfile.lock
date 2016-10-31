@@ -7,15 +7,17 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   PAYJP:
     :git: git@github.com:payjp/payjp-ios.git
+    :submodules: true
 
 CHECKOUT OPTIONS:
   PAYJP:
     :commit: 974d6a81acf0a5f11a0091eec7d91f561b383c7f
     :git: git@github.com:payjp/payjp-ios.git
+    :submodules: true
 
 SPEC CHECKSUMS:
   PAYJP: 9ea3e09ff5a8276a005b86debae4634a5a2815a3
 
-PODFILE CHECKSUM: e730be30f4d82922807c663ae4c4789af89c61cc
+PODFILE CHECKSUM: 5c797d8cb6e1e8463b9763ab77a601452a625bee
 
 COCOAPODS: 1.1.1
