@@ -69,6 +69,7 @@ NSString * const PAYJPPublicKey = @"pk_live_de31eb469b28831c2fa45839";
 
 - (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller {
     NSLog(@"call delegate paymentAuthorizationViewControllerDidFinish:");
+    [controller dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
