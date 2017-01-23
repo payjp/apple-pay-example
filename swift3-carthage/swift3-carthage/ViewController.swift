@@ -5,7 +5,7 @@ import PAYJP
 
 // TODO: SET YOUR Apple Merchant ID
 let appleMerchantID = "merchant.jp.pay"
-let PAYJPPublicKey = "pk_live_4340037be7ea8b9937fff67a"
+let PAYJPPublicKey = "pk_test_d5b6d618c26b898d5ed4253c"
 
 class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDelegate {
     @IBOutlet weak var amountField: UITextField!

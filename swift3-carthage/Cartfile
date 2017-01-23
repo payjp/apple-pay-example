@@ -1,1 +1,1 @@
-git "git@github.com:payjp/payjp-ios.git" "master"
+github "payjp/payjp-ios"

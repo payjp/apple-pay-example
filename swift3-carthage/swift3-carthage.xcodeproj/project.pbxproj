@@ -11,23 +11,8 @@
 		C62FB8B81DBA1D2B0067BCFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62FB8B61DBA1D2B0067BCFF /* ViewController.swift */; };
 		C62FB8BA1DBA1F1A0067BCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62FB8B91DBA1F1A0067BCFF /* Assets.xcassets */; };
 		C62FB8BE1DBA29FE0067BCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62FB8BD1DBA29FE0067BCFF /* Main.storyboard */; };
-		C63131611DB8C91C00F50A1D /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63131601DB8C91C00F50A1D /* PAYJP.framework */; };
-		C63131621DB8C91C00F50A1D /* PAYJP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C63131601DB8C91C00F50A1D /* PAYJP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6E00B011E1E5DA700C101B0 /* PAYJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E00AFF1E1E5CEF00C101B0 /* PAYJP.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C63131631DB8C91C00F50A1D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C63131621DB8C91C00F50A1D /* PAYJP.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C62FB8B51DBA1D2B0067BCFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +22,7 @@
 		C63131411DB8AC9800F50A1D /* swift3-carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift3-carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63131501DB8AC9800F50A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63131571DB8AE3700F50A1D /* ApplePay.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = ApplePay.entitlements; path = ../../share/ApplePay.entitlements; sourceTree = "<group>"; };
-		C63131601DB8C91C00F50A1D /* PAYJP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAYJP.framework; path = Carthage/Build/iOS/PAYJP.framework; sourceTree = "<group>"; };
+		C6E00AFF1E1E5CEF00C101B0 /* PAYJP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAYJP.framework; path = Carthage/Build/iOS/PAYJP.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63131611DB8C91C00F50A1D /* PAYJP.framework in Frameworks */,
+				C6E00B011E1E5DA700C101B0 /* PAYJP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +40,9 @@
 		C63131381DB8AC9700F50A1D = {
 			isa = PBXGroup;
 			children = (
-				C63131601DB8C91C00F50A1D /* PAYJP.framework */,
 				C63131431DB8AC9800F50A1D /* swift3-carthage */,
 				C63131421DB8AC9800F50A1D /* Products */,
+				C6E00AFE1E1E5CEF00C101B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +67,14 @@
 			path = "swift3-carthage";
 			sourceTree = "<group>";
 		};
+		C6E00AFE1E1E5CEF00C101B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6E00AFF1E1E5CEF00C101B0 /* PAYJP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,7 +85,6 @@
 				C631313D1DB8AC9800F50A1D /* Sources */,
 				C631313E1DB8AC9800F50A1D /* Frameworks */,
 				C631313F1DB8AC9800F50A1D /* Resources */,
-				C63131631DB8C91C00F50A1D /* Embed Frameworks */,
 				C63131641DB8C92800F50A1D /* Carthage */,
 			);
 			buildRules = (
@@ -285,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ../share/ApplePay.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8ZAC8P584F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ../share/ApplePay.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8ZAC8P584F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
