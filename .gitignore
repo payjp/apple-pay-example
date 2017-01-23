@@ -68,3 +68,7 @@ fastlane/test_output
 
 
 swift3-carthage/Carthage/
+*/debug.xcworkspace
+Cartfile.resolved
+Podfile.lock
+Gemfile.lock
