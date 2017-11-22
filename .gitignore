@@ -72,3 +72,5 @@ swift3-carthage/Carthage/
 Cartfile.resolved
 Podfile.lock
 Gemfile.lock
+
+Carthage/
