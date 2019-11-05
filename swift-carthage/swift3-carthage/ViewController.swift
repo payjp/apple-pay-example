@@ -3,10 +3,6 @@ import PassKit
 
 import PAYJP
 
-// TODO: SET YOUR Apple Merchant ID
-let appleMerchantID = "merchant.jp.pay"
-let PAYJPPublicKey = "pk_test_d5b6d618c26b898d5ed4253c"
-
 class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDelegate {
     @IBOutlet weak var amountField: UITextField!
     @IBOutlet weak var responseText: UITextView!
@@ -24,7 +20,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
             button.setImage(image, for: .normal)
         }
         
-        button.addTarget(self, action: #selector(pay), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(pay), for: .touchUpInside)
         buttonArea.insertSubview(button, at: 0)
     }
     
@@ -39,7 +35,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
         guard let amount = currentAmount?.stringValue else { return }
         
-        let apiClient = PAYJP.APIClient(publicKey: PAYJPPublicKey)
+        let apiClient = APIClient.shared
         apiClient.createToken(with: payment.token) { (result) in
             switch result {
             case .success(let token):
@@ -59,7 +55,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
         controller.dismiss(animated: true, completion: nil)
     }
     
-    func pay() {
+    @objc func pay() {
         guard let amount = currentAmount else {
             return
         }
@@ -76,9 +72,10 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
         request.merchantCapabilities = PKMerchantCapability.capability3DS
         request.requiredBillingAddressFields = PKAddressField.postalAddress
         
-        let vc = PKPaymentAuthorizationViewController(paymentRequest: request)
-        vc.delegate = self
-        present(vc, animated: true, completion: nil)
+        if let vc = PKPaymentAuthorizationViewController(paymentRequest: request) {
+            vc.delegate = self
+            present(vc, animated: true, completion: nil)
+        }
     }
     
     private var supportedPaymentNetworks: [PKPaymentNetwork] {
@@ -102,7 +99,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
                 message: "このデバイスはApple Payに対応していません",
                 preferredStyle: .alert
             )
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             
             buttonArea.isHidden = true
@@ -119,16 +116,13 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
                 message: "今すぐ決済方法を登録しますか？",
                 preferredStyle: .alert
             )
-            alertController.addAction(UIAlertAction(title: "YES", style: UIAlertActionStyle.default, handler: { action in
+            alertController.addAction(UIAlertAction(title: "YES", style: .default, handler: { action in
                 if #available(iOS 8.3, *) {
                     PKPassLibrary().openPaymentSetup()
                 }
             }))
-            alertController.addAction(UIAlertAction(title: "NO", style: UIAlertActionStyle.cancel, handler: nil))
+            alertController.addAction(UIAlertAction(title: "NO", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
     }
 }
-
-
-

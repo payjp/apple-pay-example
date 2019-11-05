@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+@import PAYJP;
+
+NSString * const ApplePayMerchantID = @"merchant.jp.pay";
+NSString * const PAYJPPublicKey = @"pk_live_de31eb469b28831c2fa45839";
 
 @interface AppDelegate ()
 
@@ -16,7 +20,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    PAYJPSDK.publicKey = PAYJPPublicKey;
+    
     return YES;
 }
 
