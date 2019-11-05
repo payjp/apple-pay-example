@@ -7,12 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @import PassKit;
 @import PAYJP;
-
-NSString * const ApplePayMerchantID = @"merchant.jp.pay";
-NSString * const PAYJPPublicKey = @"pk_live_de31eb469b28831c2fa45839";
 
 @interface ViewController () <PKPaymentAuthorizationViewControllerDelegate>
 
