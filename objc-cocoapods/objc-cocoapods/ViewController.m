@@ -55,8 +55,8 @@ NSString * const PAYJPPublicKey = @"pk_live_de31eb469b28831c2fa45839";
                        didAuthorizePayment:(PKPayment *)payment
                                 completion:(void (^)(PKPaymentAuthorizationStatus status))completion {
     
-    PAYAPIClient *apiClient = [[PAYAPIClient alloc] initWithPublicKey:PAYJPPublicKey];
-    [apiClient createTokenWith:payment.token completionHandler:^(NSError *error, PAYToken *token) {
+    PAYAPIClient *apiClient = PAYAPIClient.sharedClient;
+    [apiClient createTokenWith:payment.token completionHandler:^(PAYToken *token, NSError *error) {
         if (!token) {
             completion(PKPaymentAuthorizationStatusFailure);
             return;

@@ -1,4 +1,4 @@
-platform :ios, '8.4'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'objc-cocoapods' do
