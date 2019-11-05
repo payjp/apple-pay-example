@@ -20,7 +20,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
             button.setImage(image, for: .normal)
         }
         
-        button.addTarget(self, action: #selector(pay), for: UIControl.Event.touchUpInside)
+        button.addTarget(self, action: #selector(pay), for: .touchUpInside)
         buttonArea.insertSubview(button, at: 0)
     }
     
@@ -99,7 +99,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
                 message: "このデバイスはApple Payに対応していません",
                 preferredStyle: .alert
             )
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             
             buttonArea.isHidden = true
@@ -116,16 +116,13 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
                 message: "今すぐ決済方法を登録しますか？",
                 preferredStyle: .alert
             )
-            alertController.addAction(UIAlertAction(title: "YES", style: UIAlertAction.Style.default, handler: { action in
+            alertController.addAction(UIAlertAction(title: "YES", style: .default, handler: { action in
                 if #available(iOS 8.3, *) {
                     PKPassLibrary().openPaymentSetup()
                 }
             }))
-            alertController.addAction(UIAlertAction(title: "NO", style: UIAlertAction.Style.cancel, handler: nil))
+            alertController.addAction(UIAlertAction(title: "NO", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
     }
 }
-
-
-
