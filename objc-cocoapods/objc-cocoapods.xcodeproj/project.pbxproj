@@ -117,7 +117,6 @@
 				C631316B1DB8D73100F50A1D /* Frameworks */,
 				C631316C1DB8D73100F50A1D /* Resources */,
 				42FFEC693D361B1CCF74D3AF /* [CP] Embed Pods Frameworks */,
-				6700B2DE36DCB197A959BA71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,7 +204,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-objc-cocoapods/Pods-objc-cocoapods-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-objc-cocoapods/Pods-objc-cocoapods-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PAYJP/PAYJP.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -214,22 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-objc-cocoapods/Pods-objc-cocoapods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6700B2DE36DCB197A959BA71 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-objc-cocoapods/Pods-objc-cocoapods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-objc-cocoapods/Pods-objc-cocoapods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 @import PAYJP;
 
-NSString * const ApplePayMerchantID = @"merchant.jp.pay";
-NSString * const PAYJPPublicKey = @"pk_live_de31eb469b28831c2fa45839";
+NSString * const ApplePayMerchantID = @"merchant.jp.pay.example2";
+NSString * const PAYJPPublicKey = @"pk_test_0383a1b8f91e8a6e3ea0e2a9";
 
 @interface AppDelegate ()
 

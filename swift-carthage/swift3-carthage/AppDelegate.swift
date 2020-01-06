@@ -2,8 +2,8 @@ import UIKit
 import PAYJP
 
 // TODO: SET YOUR Apple Merchant ID
-let appleMerchantID = "merchant.jp.pay"
-let PAYJPPublicKey = "pk_test_d5b6d618c26b898d5ed4253c"
+let appleMerchantID = "merchant.jp.pay.example2"
+let PAYJPPublicKey = "pk_test_0383a1b8f91e8a6e3ea0e2a9"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
