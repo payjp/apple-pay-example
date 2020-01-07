@@ -19,7 +19,7 @@
 		C62FB8B61DBA1D2B0067BCFF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C62FB8B91DBA1F1A0067BCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../share/Assets.xcassets; sourceTree = "<group>"; };
 		C62FB8BD1DBA29FE0067BCFF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C63131411DB8AC9800F50A1D /* swift3-carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift3-carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63131411DB8AC9800F50A1D /* swift-carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63131501DB8AC9800F50A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63131571DB8AE3700F50A1D /* ApplePay.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = ApplePay.entitlements; path = ../../share/ApplePay.entitlements; sourceTree = "<group>"; };
 		C6E00AFF1E1E5CEF00C101B0 /* PAYJP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PAYJP.framework; path = Carthage/Build/iOS/PAYJP.framework; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		C63131381DB8AC9700F50A1D = {
 			isa = PBXGroup;
 			children = (
-				C63131431DB8AC9800F50A1D /* swift3-carthage */,
+				C63131431DB8AC9800F50A1D /* swift-carthage */,
 				C63131421DB8AC9800F50A1D /* Products */,
 				C6E00AFE1E1E5CEF00C101B0 /* Frameworks */,
 			);
@@ -49,12 +49,12 @@
 		C63131421DB8AC9800F50A1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C63131411DB8AC9800F50A1D /* swift3-carthage.app */,
+				C63131411DB8AC9800F50A1D /* swift-carthage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C63131431DB8AC9800F50A1D /* swift3-carthage */ = {
+		C63131431DB8AC9800F50A1D /* swift-carthage */ = {
 			isa = PBXGroup;
 			children = (
 				C62FB8B91DBA1F1A0067BCFF /* Assets.xcassets */,
@@ -64,7 +64,7 @@
 				C63131571DB8AE3700F50A1D /* ApplePay.entitlements */,
 				C63131501DB8AC9800F50A1D /* Info.plist */,
 			);
-			path = "swift3-carthage";
+			path = "swift-carthage";
 			sourceTree = "<group>";
 		};
 		C6E00AFE1E1E5CEF00C101B0 /* Frameworks */ = {
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C63131401DB8AC9800F50A1D /* swift3-carthage */ = {
+		C63131401DB8AC9800F50A1D /* swift-carthage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C63131531DB8AC9800F50A1D /* Build configuration list for PBXNativeTarget "swift3-carthage" */;
+			buildConfigurationList = C63131531DB8AC9800F50A1D /* Build configuration list for PBXNativeTarget "swift-carthage" */;
 			buildPhases = (
 				C631313D1DB8AC9800F50A1D /* Sources */,
 				C631313E1DB8AC9800F50A1D /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = "swift3-carthage";
+			name = "swift-carthage";
 			productName = "swift3-carthage";
-			productReference = C63131411DB8AC9800F50A1D /* swift3-carthage.app */;
+			productReference = C63131411DB8AC9800F50A1D /* swift-carthage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C631313C1DB8AC9700F50A1D /* Build configuration list for PBXProject "swift3-carthage" */;
+			buildConfigurationList = C631313C1DB8AC9700F50A1D /* Build configuration list for PBXProject "swift-carthage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -133,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C63131401DB8AC9800F50A1D /* swift3-carthage */,
+				C63131401DB8AC9800F50A1D /* swift-carthage */,
 			);
 		};
 /* End PBXProject section */
@@ -286,9 +286,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "swift3-carthage/Info.plist";
+				INFOPLIST_FILE = "swift-carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.pay.example.swift3-carthage";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.pay.example.swift-carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -310,9 +310,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "swift3-carthage/Info.plist";
+				INFOPLIST_FILE = "swift-carthage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.pay.example.swift3-carthage";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.pay.example.swift-carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C631313C1DB8AC9700F50A1D /* Build configuration list for PBXProject "swift3-carthage" */ = {
+		C631313C1DB8AC9700F50A1D /* Build configuration list for PBXProject "swift-carthage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C63131511DB8AC9800F50A1D /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C63131531DB8AC9800F50A1D /* Build configuration list for PBXNativeTarget "swift3-carthage" */ = {
+		C63131531DB8AC9800F50A1D /* Build configuration list for PBXNativeTarget "swift-carthage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C63131541DB8AC9800F50A1D /* Debug */,
